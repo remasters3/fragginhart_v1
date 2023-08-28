@@ -1,55 +1,24 @@
-textures/fragginhart_v1/terrain_0
+levelshots/fragginhart_v1_cc_automap
 {
-	surfaceparm nolightmap
-	q3map_novertexshadows
-	q3map_forcesunlight
+	nopicmip
+	nocompress
+	nomipmaps
 	{
-		map textures/temperate_sd/grass_path1.tga
-		rgbGen vertex
-		tcmod scale 0.500 0.500
+		clampmap levelshots/fragginhart_cc.tga
+		depthFunc equal
+		rgbGen identity
 	}
 }
 
-textures/fragginhart_v1/terrain_1
+levelshots/fragginhart_v1_cc_trans
 {
-	surfaceparm nolightmap
-	q3map_novertexshadows
-	q3map_forcesunlight
+	nopicmip
+	nocompress
+	nomipmaps
 	{
-		map textures/temperate_sd/rock_ugly_brown.tga
-		rgbGen vertex
-		tcmod scale 0.500 0.500
-	}
-}
-
-textures/fragginhart_v1/terrain_0to1
-{
-	surfaceparm nolightmap
-	q3map_novertexshadows
-	q3map_forcesunlight
-	{
-		map textures/temperate_sd/grass_path1.tga
-		rgbGen vertex
+		clampmap levelshots/fragginhart_cc.tga
+		blendfunc blend
+		rgbGen identity
 		alphaGen vertex
-		tcmod scale 0.500 0.500
-	}
-	{
-		map textures/temperate_sd/rock_ugly_brown.tga
-		rgbGen vertex
-		alphaGen vertex
-		tcmod scale 0.500 0.500
-		blendFunc GL_SRC_ALPHA GL_ONE_MINUS_SRC_ALPHA
-	}
-}
-
-textures/fragginhart_v1/terrain.vertex
-{
-	surfaceparm nolightmap
-	q3map_novertexshadows
-	q3map_forcesunlight
-	{
-		map textures/temperate_sd/grass_path1.tga
-		rgbGen vertex
-		tcmod scale 0.500 0.500
 	}
 }
