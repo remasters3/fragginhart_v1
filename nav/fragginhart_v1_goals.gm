@@ -1,0 +1,202 @@
+global _MG = 
+{
+	AMMOCAB_first_ammocabinet = 
+	{
+		CreateOnLoad = 0,
+		GoalType = "AMMOCAB",
+		Position = Vec3(-97.000, -1015.000, 279.000),
+		Range = 1250,
+		TeamAvailability = 6,
+	},
+	BUILD_Allied_Command_Post = 
+	{
+		CreateOnLoad = 0,
+		GoalType = "BUILD",
+		Position = Vec3(408.000, 1032.000, 288.000),
+		TagName = "Allied Command Post",
+		TeamAvailability = 4,
+	},
+	BUILD_Allied_MG42_Construction = 
+	{
+		CreateOnLoad = 0,
+		GoalType = "BUILD",
+		Position = Vec3(398.500, 2114.000, 716.000),
+		TagName = "Allied MG42 Construction",
+		TeamAvailability = 4,
+	},
+	BUILD_Allied_Ramp = 
+	{
+		CreateOnLoad = 0,
+		GoalType = "BUILD",
+		Position = Vec3(1744.000, -1552.000, 280.000),
+		TagName = "Allied Ramp",
+		TeamAvailability = 4,
+	},
+	BUILD_Axis_Command_Post = 
+	{
+		CreateOnLoad = 0,
+		GoalType = "BUILD",
+		Position = Vec3(-252.000, -936.000, 289.000),
+		TagName = "Axis Command Post",
+		TeamAvailability = 2,
+	},
+	BUILD_Depot_Gate_Controls = 
+	{
+		CreateOnLoad = 0,
+		GoalType = "BUILD",
+		Mobile = 1,
+		Position = Vec3(250.000, -1537.500, 248.000),
+		TagName = "Depot_Gate Controls",
+		TeamAvailability = 2,
+	},
+	BUILD_Side_Wall = 
+	{
+		CreateOnLoad = 0,
+		GoalType = "BUILD",
+		Position = Vec3(-504.000, -1148.000, 300.000),
+		TagName = "Side Wall",
+		TeamAvailability = 2,
+	},
+	CAPPOINT_Generator = 
+	{
+		GoalType = "CapPoint",
+		MinRadius = 32,
+		Position = Vec3(-1085.875, 545.773, 381.125),
+	},
+	CAPPOINT_Transmitter = 
+	{
+		GoalType = "CapPoint",
+		MinRadius = 32,
+		Position = Vec3(-1284.956, 1509.863, 237.125),
+	},
+	CHECKPOINT_Forwardbunker_flag = 
+	{
+		CreateOnLoad = 0,
+		GoalType = "CHECKPOINT",
+		Position = Vec3(-1392.000, -1840.000, 280.000),
+	},
+	FLAG_documents = 
+	{
+		CreateOnLoad = 0,
+		GoalType = "Flag",
+		Position = Vec3(2237.000, -1415.000, 321.125),
+		TeamAvailability = 4,
+	},
+	FLAG_main_gate_keycard = 
+	{
+		CreateOnLoad = 0,
+		GoalType = "Flag",
+		Position = Vec3(2324.000, 711.000, 283.125),
+		TeamAvailability = 4,
+	},
+	HEALTHCAB_first_healthcabinet = 
+	{
+		CreateOnLoad = 0,
+		GoalType = "HEALTHCAB",
+		Position = Vec3(-95.000, -904.000, 279.000),
+		Range = 1250,
+		TeamAvailability = 6,
+	},
+	MOUNTMG42_Allied_MG42_Construction = 
+	{
+		CreateOnLoad = 0,
+		GoalType = "MOUNTMG42",
+		MaxCampTime = 60,
+		MinCampTime = 15,
+		Position = Vec3(325.000, 2040.000, 683.000),
+		TagName = "Allied MG42 Construction",
+		TeamAvailability = 6,
+	},
+	PLANT_Allied_Command_Post = 
+	{
+		CreateOnLoad = 0,
+		ExplosiveType = 3,
+		GoalType = "PLANT",
+		Position = Vec3(407.000, 1099.500, 288.000),
+		TagName = "Allied Command Post",
+		TeamAvailability = 2,
+	},
+	PLANT_Allied_MG42_Construction = 
+	{
+		CreateOnLoad = 0,
+		ExplosiveType = 3,
+		GoalType = "PLANT",
+		Position = Vec3(332.000, 2042.000, 673.000),
+		TagName = "Allied MG42 Construction",
+		TeamAvailability = 2,
+	},
+	PLANT_Allied_Ramp = 
+	{
+		CreateOnLoad = 0,
+		ExplosiveType = 3,
+		GoalType = "PLANT",
+		Position = Vec3(1604.000, -1658.500, 336.000),
+		TagName = "Allied Ramp",
+		TeamAvailability = 2,
+	},
+	PLANT_Axis_Command_Post = 
+	{
+		CreateOnLoad = 0,
+		ExplosiveType = 3,
+		GoalType = "PLANT",
+		Position = Vec3(-253.000, -868.500, 289.000),
+		TagName = "Axis Command Post",
+		TeamAvailability = 4,
+	},
+	PLANT_Depot_Gate_Controls = 
+	{
+		ExplosiveType = 3,
+		GoalType = "PLANT",
+		MinRadius = 32,
+		Position = Vec3(249.177, -1556.125, 201.125),
+		TraceInfo = 
+		{
+			class = "GOAL",
+			endPos = Vec3(243.929, -664.379, -204.152),
+			eyePos = Vec3(249.167, -1575.019, 264.125),
+			id = 229,
+		},
+	},
+	PLANT_Side_Wall = 
+	{
+		CreateOnLoad = 0,
+		ExplosiveType = 1,
+		GoalType = "PLANT",
+		Position = Vec3(-744.000, -1048.000, 300.000),
+		TagName = "Side Wall",
+		TeamAvailability = 4,
+	},
+	REPAIRMG42_Allied_MG42_Construction = 
+	{
+		CreateOnLoad = 0,
+		GoalType = "REPAIRMG42",
+		Position = Vec3(325.000, 2040.000, 683.000),
+		TagName = "Allied MG42 Construction",
+		TeamAvailability = 6,
+	},
+	SWITCH_Depot_Gate = 
+	{
+		AimPosition = Vec3(389.965, -1921.875, 249.581),
+		Facing = Vec3(0.000, 0.000, 0.000),
+		GoalType = "SWITCH",
+		Position = Vec3(389.094, -1891.280, 201.125),
+		Radius = 32,
+	},
+	SWITCH_Main_Gate_Inner = 
+	{
+		AimPosition = Vec3(-1948.875, -669.616, 256.284),
+		Facing = Vec3(0.000, 0.000, 0.000),
+		GoalType = "SWITCH",
+		Position = Vec3(-1905.515, -669.462, 201.125),
+		Radius = 32,
+	},
+	SWITCH_Main_Gate_Outer = 
+	{
+		AimPosition = Vec3(-1563.125, -530.167, 258.855),
+		Facing = Vec3(0.000, 0.000, 0.000),
+		GoalType = "SWITCH",
+		Position = Vec3(-1598.757, -531.052, 201.125),
+		Radius = 32,
+	},
+	Version = 1,
+};
