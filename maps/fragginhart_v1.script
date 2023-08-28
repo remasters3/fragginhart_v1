@@ -360,8 +360,8 @@ Depot_Gate
 
 		playsound sound/movers/misc/garage_door_loop_01.wav looping volume 1024
 
-		// gotomarker Depot_Gate_dead_pos 50 wait
-		gotomarker Depot_Gate_open_pos 50 wait							// Depot Gate will open 100% on death
+		gotomarker Depot_Gate_dead_pos 50 wait
+		// gotomarker Depot_Gate_open_pos 50 wait							// Depot Gate will open 100% on death
 
 		stopsound
 
