@@ -12,7 +12,6 @@ textures/fragginhart_final/terrain_0
 
 textures/fragginhart_final/terrain_1
 {
-	surfaceparm landmine
     surfaceparm nolightmap
 	q3map_novertexshadows
 	q3map_forcesunlight
@@ -25,7 +24,6 @@ textures/fragginhart_final/terrain_1
 
 textures/fragginhart_final/terrain_2
 {
-    surfaceparm landmine
 	surfaceparm nolightmap
 	q3map_novertexshadows
 	q3map_forcesunlight
@@ -38,7 +36,6 @@ textures/fragginhart_final/terrain_2
 
 textures/fragginhart_final/terrain_3
 {
-	surfaceparm landmine
     surfaceparm nolightmap
 	q3map_novertexshadows
 	q3map_forcesunlight
@@ -51,7 +48,6 @@ textures/fragginhart_final/terrain_3
 
 textures/fragginhart_final/terrain_4
 {
-	surfaceparm landmine
     surfaceparm nolightmap
 	q3map_novertexshadows
 	q3map_forcesunlight
@@ -144,7 +140,6 @@ textures/fragginhart_final/terrain_0to4
 
 textures/fragginhart_final/terrain_1to2
 {
-	surfaceparm landmine
     surfaceparm nolightmap
 	q3map_novertexshadows
 	q3map_forcesunlight
@@ -165,7 +160,6 @@ textures/fragginhart_final/terrain_1to2
 
 textures/fragginhart_final/terrain_1to3
 {
-	surfaceparm landmine
     surfaceparm nolightmap
 	q3map_novertexshadows
 	q3map_forcesunlight
@@ -186,7 +180,6 @@ textures/fragginhart_final/terrain_1to3
 
 textures/fragginhart_final/terrain_1to4
 {
-	surfaceparm landmine
     surfaceparm nolightmap
 	q3map_novertexshadows
 	q3map_forcesunlight
@@ -207,7 +200,6 @@ textures/fragginhart_final/terrain_1to4
 
 textures/fragginhart_final/terrain_2to3
 {
-	surfaceparm landmine
     surfaceparm nolightmap
 	q3map_novertexshadows
 	q3map_forcesunlight
@@ -228,7 +220,6 @@ textures/fragginhart_final/terrain_2to3
 
 textures/fragginhart_final/terrain_2to4
 {
-	surfaceparm landmine
     surfaceparm nolightmap
 	q3map_novertexshadows
 	q3map_forcesunlight
@@ -249,7 +240,6 @@ textures/fragginhart_final/terrain_2to4
 
 textures/fragginhart_final/terrain_3to4
 {
-	surfaceparm landmine
     surfaceparm nolightmap
 	q3map_novertexshadows
 	q3map_forcesunlight

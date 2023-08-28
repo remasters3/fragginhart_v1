@@ -1,6 +1,7 @@
 # ignore file
 pk3
 *.ps1
+gather-source.ps1
 /gather-source.ps1
 /pk3
 /pk3/*
