@@ -1,4 +1,0 @@
-// this file lists all the separate shader files
-remasters
-fragginhart
-fragginhart_v1
