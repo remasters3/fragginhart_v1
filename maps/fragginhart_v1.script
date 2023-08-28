@@ -383,8 +383,8 @@ Depot_Gate
 
 		playsound sound/movers/misc/garage_door_loop_01.wav looping volume 1024
 
-		// gotomarker Depot_Gate_open_pos 50 wait
-		gotomarker Depot_Gate_dead_pos 50 wait							// Depot Gate will open 50% on button
+		gotomarker Depot_Gate_open_pos 50 wait
+		// gotomarker Depot_Gate_dead_pos 50 wait							// Depot Gate will open 50% on button
 
 		stopsound
 
@@ -439,7 +439,7 @@ Depot_Gate_construct
 		setstate Depot_Gate_deadplate invisible
 		setstate SecondCovDoor_axisconstruct_n default
 
-		alertentity depot_tunnel_doors
+		// alertentity depot_tunnel_doors
 	}
 
 	decayed final
@@ -466,7 +466,7 @@ Depot_Gate_construct
 		setstate Depot_Gate_deadplate default
 		setstate SecondCovDoor_axisconstruct_n invisible
 
-		alertentity depot_tunnel_doors
+		// alertentity depot_tunnel_doors
 	}
 }
 

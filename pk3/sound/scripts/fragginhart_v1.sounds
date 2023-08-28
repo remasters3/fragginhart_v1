@@ -1,0 +1,221 @@
+// allied commander
+
+fragginhart_allies_dannyboy
+{
+	sound sound/remasters/bscdb.wav
+	voice
+	streaming
+}
+
+fragginhart_ramp_construct
+{
+	sound sound/vo/battery/allies/hq_rampcon.wav
+	voice
+	streaming
+}
+
+fragginhart_ramp_constructed
+{
+	sound sound/vo/battery/allies/hq_rampconst.wav
+	voice
+	streaming
+}
+
+fragginhart_allies_ramp_destroyed
+{
+	sound sound/vo/battery/allies/hq_rampdest.wav
+	voice
+	streaming
+}
+
+fragginhart_allies_depotdef_destroy
+{
+	sound sound/vo/fueldump/allies/hq_depotdyn.wav
+	voice
+	streaming
+}
+
+fragginhart_allies_gates_destroyed
+{
+	sound sound/vo/fueldump/allies/hq_gatesdest.wav
+	voice
+	streaming
+}
+
+fragginhart_allies_bunker_capture
+{
+	sound sound/vo/radar/allies/hq_bunkercap.wav
+	voice
+	streaming
+}
+
+fragginhart_allies_bunker_captured
+{
+	sound sound/vo/radar/allies/hq_bunkercapd.wav
+	voice
+	streaming
+}
+
+fragginhart_allies_bunker_reclaimed
+{
+	sound sound/vo/radar/allies/hq_bunkerrecl.wav
+	voice
+	streaming
+}
+
+fragginhart_allies_entrances_destroy
+{
+	sound sound/vo/radar/allies/hq_entrancesdyn.wav
+	voice
+	streaming
+}
+
+fragginhart_allies_entrance1_destroy
+{
+	sound sound/vo/radar/allies/hq_entrance1dyn.wav
+	voice
+	streaming
+}
+
+fragginhart_allies_entrance1_destroyed
+{
+	sound sound/vo/radar/allies/hq_entrance1dest.wav
+	voice
+	streaming
+}
+
+fragginhart_allies_entrance2_destroy
+{
+	sound sound/vo/radar/allies/hq_entrance2dyn.wav
+	voice
+	streaming
+}
+
+fragginhart_allies_entrance2_destroyed
+{
+	sound sound/vo/radar/allies/hq_entrance2dest.wav
+	voice
+	streaming
+}
+
+// axis commander
+
+fragginhart_axis_dannyboy
+{
+	sound sound/remasters/bscdb.wav
+	voice
+	streaming
+}
+
+fragginhart_axis_ramp_stop
+{
+	sound sound/vo/battery/axis/hq_rampstop.wav
+	voice
+	streaming
+}
+
+fragginhart_axis_ramp_constructed
+{
+	sound sound/vo/battery/axis/hq_rampconst.wav
+	voice
+	streaming
+}
+
+fragginhart_axis_ramp_destroyed
+{
+	sound sound/vo/battery/axis/hq_rampdest.wav
+	voice
+	streaming
+}
+
+fragginhart_axis_gates_stop
+{
+	sound sound/vo/fueldump/axis/hq_gatesstop.wav
+	voice
+	streaming
+}
+
+fragginhart_gates_destroyed
+{
+	sound sound/vo/fueldump/axis/hq_gatesdest.wav
+	voice
+	streaming
+}
+
+
+fragginhart_axis_bunker_stop
+{
+	sound sound/vo/radar/axis/hq_bunkerstop.wav
+	voice
+	streaming
+}
+
+fragginhart_axis_bunker_captured
+{
+	sound sound/vo/radar/axis/hq_bunkercapd.wav
+	voice
+	streaming
+}
+
+fragginhart_axis_bunker_reclaimed
+{
+	sound sound/vo/radar/axis/hq_bunkerrecl.wav
+	voice
+	streaming
+}
+
+fragginhart_axis_entrances_defend
+{
+	sound sound/vo/radar/axis/hq_entrancesdef.wav
+	voice
+	streaming
+}
+
+fragginhart_axis_entrance1_stop
+{
+	sound sound/vo/radar/axis/hq_entrance1stop.wav
+	voice
+	streaming
+}
+
+fragginhart_axis_entrance1_defend
+{
+	sound sound/vo/radar/axis/hq_entrance1def.wav
+	voice
+	streaming
+}
+
+fragginhart_axis_entrance1_destroyed
+{
+	sound sound/vo/radar/axis/hq_entrance1dest.wav
+	voice
+	streaming
+}
+
+fragginhart_axis_entrance2_stop
+{
+	sound sound/vo/radar/axis/hq_entrance2stop.wav
+	voice
+	streaming
+}
+
+fragginhart_axis_entrance2_defend
+{
+	sound sound/vo/radar/axis/hq_entrance2def.wav
+	voice
+	streaming
+}
+
+fragginhart_axis_entrance2_destroyed
+{
+	sound sound/vo/radar/axis/hq_entrance2dest.wav
+	voice
+	streaming
+}
+
+fragginhart_axis_generator_defend
+{
+	sound sound/vo/battery/axis/hq_gendef.wav
+	voice
+	streaming
+}
