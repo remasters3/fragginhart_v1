@@ -4,7 +4,7 @@ textures/fragginhart_final/terrain_0
 	q3map_novertexshadows
 	q3map_forcesunlight
 	{
-		map textures/temperate_sd/rock_ugly_brown.tga
+		map textures\temperate_sd\rock_ugly_brown.tga
         rgbGen vertex
 		tcmod scale 0.3 0.3
 	}
@@ -36,6 +36,7 @@ textures/fragginhart_final/terrain_2
 
 textures/fragginhart_final/terrain_3
 {
+    surfaceparm landmine
     surfaceparm nolightmap
 	q3map_novertexshadows
 	q3map_forcesunlight
@@ -48,6 +49,7 @@ textures/fragginhart_final/terrain_3
 
 textures/fragginhart_final/terrain_4
 {
+    surfaceparm landmine
     surfaceparm nolightmap
 	q3map_novertexshadows
 	q3map_forcesunlight
@@ -60,11 +62,12 @@ textures/fragginhart_final/terrain_4
 
 textures/fragginhart_final/terrain_0to1
 {
+    surfaceparm landmine
 	surfaceparm nolightmap
 	q3map_novertexshadows
 	q3map_forcesunlight
 	{
-		map textures/temperate_sd/rock_ugly_brown.tga
+		map textures\temperate_sd\rock_ugly_brown.tga
         rgbGen vertex
 		alphaGen vertex
 		tcmod scale 0.3 0.3
@@ -80,11 +83,12 @@ textures/fragginhart_final/terrain_0to1
 
 textures/fragginhart_final/terrain_0to2
 {
+    surfaceparm landmine
 	surfaceparm nolightmap
 	q3map_novertexshadows
 	q3map_forcesunlight
 	{
-		map textures/temperate_sd/rock_ugly_brown.tga
+		map textures\temperate_sd\rock_ugly_brown.tga
         rgbGen vertex
 		alphaGen vertex
 		tcmod scale 0.3 0.3
@@ -100,11 +104,12 @@ textures/fragginhart_final/terrain_0to2
 
 textures/fragginhart_final/terrain_0to3
 {
+    surfaceparm landmine
 	surfaceparm nolightmap
 	q3map_novertexshadows
 	q3map_forcesunlight
 	{
-		map textures/temperate_sd/rock_ugly_brown.tga
+		map textures\temperate_sd\rock_ugly_brown.tga
         rgbGen vertex
 		alphaGen vertex
 		tcmod scale 0.3 0.3
@@ -120,11 +125,12 @@ textures/fragginhart_final/terrain_0to3
 
 textures/fragginhart_final/terrain_0to4
 {
+    surfaceparm landmine
 	surfaceparm nolightmap
 	q3map_novertexshadows
 	q3map_forcesunlight
 	{
-		map textures/temperate_sd/rock_ugly_brown.tga
+		map textures\temperate_sd\rock_ugly_brown.tga
         rgbGen vertex
 		alphaGen vertex
 		tcmod scale 0.3 0.3
@@ -140,6 +146,7 @@ textures/fragginhart_final/terrain_0to4
 
 textures/fragginhart_final/terrain_1to2
 {
+    surfaceparm landmine
     surfaceparm nolightmap
 	q3map_novertexshadows
 	q3map_forcesunlight
@@ -160,6 +167,7 @@ textures/fragginhart_final/terrain_1to2
 
 textures/fragginhart_final/terrain_1to3
 {
+    surfaceparm landmine
     surfaceparm nolightmap
 	q3map_novertexshadows
 	q3map_forcesunlight
@@ -180,6 +188,7 @@ textures/fragginhart_final/terrain_1to3
 
 textures/fragginhart_final/terrain_1to4
 {
+    surfaceparm landmine
     surfaceparm nolightmap
 	q3map_novertexshadows
 	q3map_forcesunlight
@@ -200,6 +209,7 @@ textures/fragginhart_final/terrain_1to4
 
 textures/fragginhart_final/terrain_2to3
 {
+    surfaceparm landmine
     surfaceparm nolightmap
 	q3map_novertexshadows
 	q3map_forcesunlight
@@ -220,6 +230,7 @@ textures/fragginhart_final/terrain_2to3
 
 textures/fragginhart_final/terrain_2to4
 {
+    surfaceparm landmine
     surfaceparm nolightmap
 	q3map_novertexshadows
 	q3map_forcesunlight
@@ -240,6 +251,7 @@ textures/fragginhart_final/terrain_2to4
 
 textures/fragginhart_final/terrain_3to4
 {
+    surfaceparm landmine
     surfaceparm nolightmap
 	q3map_novertexshadows
 	q3map_forcesunlight
@@ -260,11 +272,12 @@ textures/fragginhart_final/terrain_3to4
 
 textures/fragginhart_final/terrain.vertex
 {
+    surfaceparm landmine
 	surfaceparm nolightmap
 	q3map_novertexshadows
 	q3map_forcesunlight
 	{
-		map textures/temperate_sd/rock_ugly_brown.tga
+		map textures\temperate_sd\rock_ugly_brown.tga
         rgbGen vertex
 		tcmod scale 0.3 0.3
 	}
