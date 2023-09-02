@@ -1,0 +1,23 @@
+wm_mapdescription	allied		"Take the documents to the transmitter!"
+wm_mapdescription	axis		"Don't let Allies transmit the documents!"
+wm_mapdescription	neutral		"Allies must transmit the documents. Axis must hold off the Allied attack."
+
+// Axis Objective Descriptions
+wm_objective_axis_desc	1	"Primary Objective:**Prevent the Allies from using the Generator to gain access to the Main Gate Controls"
+wm_objective_axis_desc	2	"Secondary Objective:**Defend the Side Wall"
+wm_objective_axis_desc	3	"Primary Objective:**Defend the Forward Bunker from the Allies"
+wm_objective_axis_desc	4	"Primary Objective:**Defend the Depot Gate Controls"
+wm_objective_axis_desc	5	"Primary Objective:**Stop the Allies from stealing the Documents"
+wm_objective_axis_desc	6	"Primary Objective:**Stop the Allies from transmitting the Documents"
+wm_objective_axis_desc	7	"Secondary Objective:**Build your Command Post for improved charge times."
+wm_objective_axis_desc	8	"Secondary Objective:**Stop the Allies from constructing a Command Post."
+
+// Allied Objective Descriptions
+wm_objective_allied_desc	1	"Primary Objective:**Deliver the Keycard to the Generator to power the Main Gate Controls"
+wm_objective_allied_desc	2	"Secondary Objective:**Dynamite the Side Wall"
+wm_objective_allied_desc	3	"Primary Objective:**Capture the Forward Bunker from the Axis"
+wm_objective_allied_desc	4	"Primary Objective:**Destroy the Depot Gate Controls"
+wm_objective_allied_desc	5	"Primary Objective:**Steal the Documents"
+wm_objective_allied_desc	6	"Primary Objective:**Transmit the Documents"
+wm_objective_allied_desc	7	"Secondary Objective:**Stop the Axis from constructing a Command Post."
+wm_objective_allied_desc	8	"Secondary Objective:**Build a Command Post for faster charge times."
