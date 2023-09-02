@@ -1,5 +1,6 @@
 textures/fragginhart/terrain_0
 {
+	surfaceparm landmine
 	q3map_lightmapsamplesize 64
 	q3map_lightmapaxis z
 	q3map_texturesize 512 512
@@ -16,6 +17,7 @@ textures/fragginhart/terrain_0
 
 textures/fragginhart/terrain_1
 {
+	surfaceparm landmine
 	q3map_lightmapsamplesize 64
 	q3map_lightmapaxis z
 	q3map_texturesize 512 512
@@ -32,6 +34,7 @@ textures/fragginhart/terrain_1
 
 textures/fragginhart/terrain_2
 {
+	surfaceparm landmine
 	q3map_lightmapsamplesize 64
 	q3map_lightmapaxis z
 	q3map_texturesize 512 512
@@ -48,6 +51,7 @@ textures/fragginhart/terrain_2
 
 textures/fragginhart/terrain_3
 {
+	surfaceparm landmine
 	q3map_lightmapsamplesize 64
 	q3map_lightmapaxis z
 	q3map_texturesize 512 512
@@ -64,6 +68,7 @@ textures/fragginhart/terrain_3
 
 textures/fragginhart/terrain_0to1
 {
+	surfaceparm landmine
 	q3map_lightmapsamplesize 64
 	q3map_lightmapaxis z
 	q3map_texturesize 512 512
@@ -86,6 +91,7 @@ textures/fragginhart/terrain_0to1
 
 textures/fragginhart/terrain_0to2
 {
+	surfaceparm landmine
 	q3map_lightmapsamplesize 64
 	q3map_lightmapaxis z
 	q3map_texturesize 512 512
@@ -108,6 +114,7 @@ textures/fragginhart/terrain_0to2
 
 textures/fragginhart/terrain_0to3
 {
+	surfaceparm landmine
 	q3map_lightmapsamplesize 64
 	q3map_lightmapaxis z
 	q3map_texturesize 512 512
@@ -130,6 +137,7 @@ textures/fragginhart/terrain_0to3
 
 textures/fragginhart/terrain_1to2
 {
+	surfaceparm landmine
 	q3map_lightmapsamplesize 64
 	q3map_lightmapaxis z
 	q3map_texturesize 512 512
@@ -152,6 +160,7 @@ textures/fragginhart/terrain_1to2
 
 textures/fragginhart/terrain_1to3
 {
+	surfaceparm landmine
 	q3map_lightmapsamplesize 64
 	q3map_lightmapaxis z
 	q3map_texturesize 512 512
@@ -174,6 +183,7 @@ textures/fragginhart/terrain_1to3
 
 textures/fragginhart/terrain_2to3
 {
+	surfaceparm landmine
 	q3map_lightmapsamplesize 64
 	q3map_lightmapaxis z
 	q3map_texturesize 512 512
