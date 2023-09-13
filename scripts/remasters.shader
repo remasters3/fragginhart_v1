@@ -28,6 +28,38 @@ textures/remasters/rem_xlight_4000
 	}
 }
 
+textures/remasters/rem_metal_red
+{
+    qer_editorimage textures\remasters\red.tga
+	surfaceparm roofsteps
+	surfaceparm slick
+	implicitMap textures\remasters\red.tga
+}
+
+textures/remasters/rem_metal_blue
+{
+    qer_editorimage textures\remasters\blue.tga
+	surfaceparm roofsteps
+	surfaceparm slick
+	implicitMap textures\remasters\blue.tga
+}
+
+textures/remasters/rem_metal_green
+{
+    qer_editorimage textures\remasters\green.tga
+	surfaceparm roofsteps
+	surfaceparm slick
+	implicitMap textures\remasters\green.tga
+}
+
+textures/remasters/rem_metal_yellow
+{
+    qer_editorimage textures\remasters\yellow.tga
+	surfaceparm roofsteps
+	surfaceparm slick
+	implicitMap textures\remasters\yellow.tga
+}
+
 textures/remasters/rem_xlight_4000_red
 {
 	qer_editorimage textures/lights/light_xlight_02.tga
