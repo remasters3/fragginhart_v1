@@ -539,6 +539,7 @@ main_gate_keycard
 
 		setstate Maingate_cmm invisible
 		setstate main_gate_dropzone invisible
+		trigger move_Main_Gate open_action_Main_Gate
 	}
 }
 
