@@ -420,7 +420,7 @@ Depot_Gate_construct
 		wait 50
 		trigger self setup
 		constructible_class 2											// 2=Satchel 3=Dyna
-
+		setstate Depot_Gate_construct_toi invisible
 		setstate Depot_Gate_deadplate invisible
 		setstate SecondCovDoor_axisconstruct_n default
 	}
@@ -449,6 +449,8 @@ Depot_Gate_construct
 
 		setstate Depot_Gate_deadplate default
 		setstate SecondCovDoor_axisconstruct_n invisible
+		setstate Depot_Gate_construct invisible
+		setstate Depot_Gate_construct_toi invisible
 	}
 
 	death
@@ -465,6 +467,8 @@ Depot_Gate_construct
 
 		setstate Depot_Gate_deadplate default
 		setstate SecondCovDoor_axisconstruct_n invisible
+		setstate Depot_Gate_construct invisible
+		setstate Depot_Gate_construct_toi invisible
 
 		// alertentity depot_tunnel_doors
 	}
