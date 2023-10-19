@@ -51,6 +51,8 @@ game_manager
 		setautospawn "Allied Spawn" 1
 
 		setstate block_hidenroom default
+		setstate genlightsoff default
+		setstate genlightson invisible
 		alertentity gen_sound
 
 		wait 1000
@@ -485,6 +487,8 @@ main_gate_keycard
 		setstate main_gate_keycard_CMM default
 		setstate Maingate_cmm default
 		setstate main_gate_dropzone invisible
+		setstate genlightsoff default
+		setstate genlightson invisible
 	}
 
 	trigger stolen
@@ -537,6 +541,8 @@ main_gate_keycard
 
 		wm_announce "Generator powered up!"
 		wm_announce "Main Gate Controls enabled!"
+		setstate genlightsoff invisible
+		setstate genlightson default
 
 		trigger move_Main_Gate alive_action_Main_Gate
 		trigger main_gate_keycard_capmodel generator_sound				// Add sound to the Generator
