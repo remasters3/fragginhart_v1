@@ -119,11 +119,9 @@ Forwardbunker_flag
 
 		setstate map_inst_axis default
 		setstate map_inst_allies invisible
-		setstate blue_fowardbunker_chess invisible
-		setstate red_fowardbunker_chess default
 	}
 
-	trigger axis_capture												// Touched by an Axis player 
+	trigger axis_capture			// Touched by an Axis player 
 	{
 		accum 0 abort_if_equal 0										// do Axis own flag?
 		accum 0 trigger_if_equal 1 Forwardbunker_flag axis_reclaim		// Reclaimed from Allies
@@ -134,8 +132,6 @@ Forwardbunker_flag
 
 		setstate map_inst_axis default
 		setstate map_inst_allies invisible
-		setstate blue_fowardbunker_chess invisible
-		setstate red_fowardbunker_chess default
 	}
 
 	trigger axis_reclaim 
@@ -170,8 +166,6 @@ Forwardbunker_flag
 
 		setstate map_inst_axis invisible
 		setstate map_inst_allies default
-		setstate blue_fowardbunker_chess default
-		setstate red_fowardbunker_chess invisible
 
 		wm_objective_status 3 1 1
 		wm_objective_status 3 0 2
