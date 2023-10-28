@@ -7,6 +7,48 @@ textures/remasters/fragginhart_map
 
 	}
 }
+textures/remasters/light_noblock_a
+{
+	qer_editorimage textures/lights/light_c01.tga
+	q3map_lightimage textures/lights/light_c01.blend.tga
+	q3map_surfacelight 20000
+	surfaceparm nomarks
+	surfaceparm nonsolid
+	surfaceparm trans
+	{
+		map $lightmap
+		rgbGen identity
+	}
+	{
+		map textures/lights/light_c01.tga
+		blendFunc GL_DST_COLOR GL_ZERO
+		rgbGen identity
+	}
+	{
+		map textures/lights/light_c01.blend.tga
+		blendFunc GL_ONE GL_ONE
+	}
+}
+
+textures/remasters/light_m16_a
+{
+	qer_editorimage textures/lights/light_m16.tga
+	q3map_surfacelight 10000
+	surfaceparm nomarks
+	{
+		map $lightmap
+		rgbGen identity
+	}
+	{
+		map textures/lights/light_m16.tga
+		blendFunc GL_DST_COLOR GL_ZERO
+		rgbGen identity
+	}
+	{
+		map textures/lights/light_m16.blend.tga
+		blendFunc GL_ONE GL_ONE
+	}
+}
 
 textures/remasters/rem_xlight_4000
 {
