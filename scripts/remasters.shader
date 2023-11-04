@@ -161,3 +161,30 @@ textures/remasters/rem_xlight_4000_green
 		blendFunc GL_ONE GL_ONE
 	}
 }
+
+textures/remasters/fueldumpsky
+{
+	qer_editorimage textures/skies/fueldump_clouds.tga
+	// q3map_lightrgb 0.8 0.9 1.0
+	q3map_lightrgb 1.0 1.0 1.0
+	q3map_sunExt 1 1 1 140 -35 25 3 16		//adds deviance and samples
+	// q3map_skyLight 100 6
+	q3map_skylight 85 3
+	q3map_sun 1 .95 .9 200 210 28
+	skyparms - 200 -
+	surfaceparm nodlight
+	surfaceparm noimpact
+	surfaceparm nolightmap
+	surfaceparm sky
+	{
+		map textures/skies/fueldump_clouds.tga
+		rgbGen identity
+	}
+	{
+		map textures/skies/fueldump_clouds.tga
+		blendfunc blend
+		rgbGen identity
+		tcMod scroll 0.0005 0.00
+		tcMod scale 2 1
+	}
+}
