@@ -168,8 +168,9 @@ textures/remasters/fueldumpsky
 	// q3map_lightrgb 0.8 0.9 1.0
 	q3map_lightrgb 1.0 1.0 1.0
 	q3map_sunExt 1 1 1 140 -35 25 3 16		//adds deviance and samples
-	// q3map_skyLight 100 6
-	q3map_skylight 85 3
+	q3map_lightmapFilterRadius 0 8		//self other
+	q3map_skyLight 100 6
+	//q3map_skylight 85 3
 	q3map_sun 1 .95 .9 200 210 28
 	skyparms - 200 -
 	surfaceparm nodlight
