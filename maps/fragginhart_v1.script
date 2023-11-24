@@ -255,7 +255,8 @@ move_Depot_Gate
 	trigger open_action_Depot_Gate
 	{
 		trigger Depot_Gate open
-		// wait 11000
+		wait 11000
+		trigger Depot_Gate close
 	}
 
 		trigger close_action_Depot_Gate
