@@ -211,70 +211,25 @@ Forwardbunker_flag
 }
 
 // ==== Side Wall ==== //
-
-SideWall_axisconstruct_n
+Sidewall
 {
 	spawn
 	{
-		wait 50
-		trigger self setup
-		constructible_class 3											// 2=Satchel 3=Dyna
-
-		setstate SideWall_axisconstruct_n_materials invisible			// Crate Models
-		setstate SideWall_axisconstruct_n_clip invisible				// Clip brushes
-		setstate SideWall_axisconstruct_n_flag invisible
+		wait 300
+		constructible_class 3     // 2=Satchel 3=Dyna
 		setstate bit_of_sidewall invisible
-	}
-
-	trigger setup
-	{
-		setstate SideWall_axisconstruct_n_materials invisible			// Crate Models
-		setstate SideWall_axisconstruct_n_clip invisible				// Clip brushes
-		setstate SideWall_axisconstruct_n_flag invisible
-		setstate bit_of_sidewall invisible
-		setstate SideWall_axisconstruct_n_toi default
-	}
-
-	built final
-	{
-		setstate SideWall_axisconstruct_n_materials invisible			// Crate Models
-		setstate SideWall_axisconstruct_n_clip invisible				// Clip brushes
-		setstate SideWall_axisconstruct_n_flag invisible
-		setstate SideWall_axisconstruct_n default
-		setstate bit_of_sidewall invisible
-		setstate SideWall_axisconstruct_n_toi invisible
-
-		//wm_announce "Axis have built the Gate!"
-
-		// *----------------------------------- vo ------------------------------------------*
-		wm_addteamvoiceannounce 0 "fragginhart_axis_entrance2_stop"
-		wm_addteamvoiceannounce 1 "fragginhart_allies_entrance2_destroy"
-
-		wm_teamvoiceannounce 0 "fragginhart_axis_entrance2_defend"
-		wm_teamvoiceannounce 1 "fragginhart_allies_entrance2_destroy"
-		// *---------------------------------------------------------------------------------*
-	}
-
-	decayed final
-	{
-		trigger self setup
 	}
 
 	death
 	{
-		trigger self setup
-
-		setstate bit_of_sidewall default
-		setstate SideWall_axisconstruct_n_toi invisible
-
 		wm_objective_status 2 1 1
 		wm_objective_status 2 0 2
-
-		wm_announce "Allies have destroyed the Side Wall!"
-
+		wm_announce "^1Allies have destroyed the Side Wall!"
+		setstate bit_of_sidewall default
+		setstate axis_spawn_door_docs invisible
 		// *----------------------------------- vo ------------------------------------------*
 		wm_teamvoiceannounce 0 "fragginhart_axis_entrance2_destroyed"
-		wm_teamvoiceannounce 1 "fragginhart_allies_entrance2_destroyed"
+		wm_teamvoiceannounce 1 "fragginhart_allies_entrance2_destroyed"zz
 
 		wm_removeteamvoiceannounce 0 "fragginhart_axis_entrance2_stop"
 		wm_removeteamvoiceannounce 1 "fragginhart_allies_entrance2_destroy"
@@ -409,64 +364,25 @@ Depot_Gate
 
 // ==== Depot Gate Controls ==== //
 
-Depot_Gate_construct
+depot_gate_controls
 {
 	spawn
 	{
-		wait 50
-		trigger self setup
-		constructible_class 2											// 2=Satchel 3=Dyna
-		setstate Depot_Gate_construct_toi invisible
+		wait 300
+		constructible_class 3
 		setstate Depot_Gate_deadplate invisible
 		setstate SecondCovDoor_axisconstruct_n default
-	}
-
-	trigger setup
-	{
-	}
-
-	built final
-	{
-		wm_announce "Axis have repaired the Depot Gate Controls!"
-		wm_announce "^7Depot Gate is ^1closing^7!"
-
-		trigger move_Depot_Gate alive_action_Depot_Gate
-
-		setstate Depot_Gate_deadplate invisible
-		setstate SecondCovDoor_axisconstruct_n default
-
-		// alertentity depot_tunnel_doors
-	}
-
-	decayed final
-	{
-		// trigger self setup
-		trigger move_Depot_Gate dead_action_Depot_Gate
-
-		setstate Depot_Gate_deadplate default
-		setstate SecondCovDoor_axisconstruct_n invisible
-		setstate Depot_Gate_construct invisible
-		setstate Depot_Gate_construct_toi invisible
 	}
 
 	death
 	{
-		// trigger self setup
-
 		wm_objective_status 4 1 1
 		wm_objective_status 4 0 2
-
 		wm_announce "Allies have damaged the Depot Gate Controls and secured the Forward Bunker!"
 		wm_announce "^7Depot Gate is ^2opening^7!"
-
-		trigger move_Depot_Gate dead_action_Depot_Gate
-
 		setstate Depot_Gate_deadplate default
 		setstate SecondCovDoor_axisconstruct_n invisible
-		setstate Depot_Gate_construct invisible
-		setstate Depot_Gate_construct_toi invisible
-
-		// alertentity depot_tunnel_doors
+		trigger move_Depot_Gate dead_action_Depot_Gate
 	}
 }
 
@@ -543,6 +459,7 @@ main_gate_keycard
 
 		setstate Maingate_cmm invisible
 		setstate main_gate_dropzone invisible
+		setstate axis_spawn_door_docs invisible
 		trigger move_Main_Gate open_action_Main_Gate
 	}
 }
