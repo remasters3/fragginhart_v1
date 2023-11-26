@@ -7,6 +7,61 @@ textures/remasters/fragginhart_map
 
 	}
 }
+
+textures/remasters/signs/fh_generator_sign
+{
+	surfaceparm metalsteps
+	implicitMap -
+}
+
+textures/remasters/signs/cp_blue_sign
+{
+	surfaceparm metalsteps
+	implicitMap -
+}
+
+textures/remasters/signs/cp_red_sign
+{
+	surfaceparm metalsteps
+	implicitMap -
+}
+
+textures/remasters/signs/docs
+{
+	surfaceparm metalsteps
+	implicitMap -
+}
+
+textures/remasters/signs/transmitter1
+{
+	surfaceparm metalsteps
+	implicitMap -
+}
+
+textures/remasters/signs/keycard
+{
+	surfaceparm metalsteps
+	implicitMap -
+}
+
+textures/remasters/signs/fb_red_sign
+{
+	surfaceparm metalsteps
+	implicitMap -
+}
+
+textures/remasters/signs/fb_blue_sign
+{
+	surfaceparm metalsteps
+	implicitMap -
+}
+
+textures/remasters/signs/depogate_ctl
+{
+	surfaceparm metalsteps
+	implicitMap -
+}
+
 textures/remasters/light_noblock_a
 {
 	qer_editorimage textures/lights/light_c01.tga
@@ -189,3 +244,4 @@ textures/remasters/fueldumpsky
 		tcMod scale 2 1
 	}
 }
+
