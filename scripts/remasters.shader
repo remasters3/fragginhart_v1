@@ -14,6 +14,18 @@ textures/remasters/signs/fh_generator_sign
 	implicitMap -
 }
 
+textures/remasters/signs/fh_generator_red_sign
+{
+	surfaceparm metalsteps
+	implicitMap -
+}
+
+textures/remasters/signs/fh_generator_blue_sign
+{
+	surfaceparm metalsteps
+	implicitMap -
+}
+
 textures/remasters/signs/cp_blue_sign
 {
 	surfaceparm metalsteps
@@ -57,6 +69,18 @@ textures/remasters/signs/fb_blue_sign
 }
 
 textures/remasters/signs/depogate_ctl
+{
+	surfaceparm metalsteps
+	implicitMap -
+}
+
+textures/remasters/signs/depogate_blue_ctl
+{
+	surfaceparm metalsteps
+	implicitMap -
+}
+
+textures/remasters/signs/depogate_red_ctl
 {
 	surfaceparm metalsteps
 	implicitMap -

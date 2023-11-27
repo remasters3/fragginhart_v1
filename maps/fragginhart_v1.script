@@ -400,6 +400,8 @@ main_gate_keycard
 		setstate main_gate_dropzone invisible
 		setstate genlightsoff default
 		setstate genlightson invisible
+		setstate generator_blue_sign invisible
+		setstate generator_red_sign default
 	}
 
 	trigger stolen
@@ -432,6 +434,8 @@ main_gate_keycard
 		// setstate Maingate_cmm invisible
 		alertentity gen_sound
 		// setstate main_gate_dropzone invisible
+		setstate generator_blue_sign default
+		setstate generator_red_sign invisible
 
 		setautospawn "Forward bunker" 0
 
