@@ -259,24 +259,24 @@ move_Depot_Gate
 		trigger Depot_Gate close
 	}
 
-		trigger close_action_Depot_Gate
+	trigger close_action_Depot_Gate
 	{	
 		trigger Depot_Gate close
 		// wait 11000
 	}
 
-		trigger dead_action_Depot_Gate
+	trigger dead_action_Depot_Gate
 	{	
 		trigger Depot_Gate dead
 		trigger Forwardbunker_flag disabled
 		// wait 11000
 	}
 
-		trigger alive_action_Depot_Gate
-		{
+	trigger alive_action_Depot_Gate
+	{
 		trigger Depot_Gate alive
-		// trigger Forwardbunker_flag enabled							// Axis can not take flag back
-		}
+	 // trigger Forwardbunker_flag enabled							// Axis can not take flag back
+	}
 }
 
 Depot_Gate
@@ -373,6 +373,8 @@ depot_gate_controls
 		constructible_class 3
 		setstate Depot_Gate_deadplate invisible
 		setstate SecondCovDoor_axisconstruct_n default
+		setstate depogate_blue_ctl invisible
+		setstate depogate_red_ctl default
 	}
 
 	death
@@ -381,6 +383,8 @@ depot_gate_controls
 		wm_objective_status 4 0 2
 		wm_announce "Allies have damaged the Depot Gate Controls and secured the Forward Bunker!"
 		wm_announce "^7Depot Gate is ^2opening^7!"
+		setstate depogate_blue_ctl default
+		setstate depogate_red_ctl invisible
 		setstate Depot_Gate_deadplate default
 		setstate SecondCovDoor_axisconstruct_n invisible
 		trigger move_Depot_Gate dead_action_Depot_Gate
@@ -388,7 +392,6 @@ depot_gate_controls
 }
 
 // ==== Keycard ==== //
-
 main_gate_keycard
 {
 	spawn
@@ -401,13 +404,19 @@ main_gate_keycard
 		setstate genlightsoff default
 		setstate genlightson invisible
 		setstate generator_blue_sign invisible
-		setstate generator_red_sign default
+		setstate keycard_blue_sign invisible
+	    setstate generator_red_sign default
+	    setstate keycard_red_sign default
+	    setstate keycard_yellow_sign invisible
 	}
 
 	trigger stolen
 	{
 		setstate main_gate_keycard_CMM invisible
 		setstate main_gate_dropzone default
+	    setstate keycard_blue_sign invisible
+	    setstate keycard_red_sign invisible
+	    setstate keycard_yellow_sign default
 	}
 
 	trigger dropped
@@ -425,7 +434,9 @@ main_gate_keycard
 	{
 		setstate main_gate_keycard_CMM default
 		setstate main_gate_dropzone invisible
-
+	    setstate keycard_blue_sign invisible
+	    setstate keycard_red_sign default
+	    setstate keycard_yellow_sign invisible
 	}
 
 	trigger captured
@@ -435,7 +446,10 @@ main_gate_keycard
 		alertentity gen_sound
 		// setstate main_gate_dropzone invisible
 		setstate generator_blue_sign default
-		setstate generator_red_sign invisible
+	    setstate generator_red_sign invisible
+	    setstate keycard_blue_sign default
+	    setstate keycard_red_sign invisible
+	    setstate keycard_yellow_sign invisible
 
 		setautospawn "Forward bunker" 0
 
@@ -717,11 +731,17 @@ documents
 	{
 		wait 20
 		setstate the_dropzone invisible
+		setstate docs_red_sign default
+		setstate docs_blue_sign invisible
+		setstate docs_yellow_sign invisible
 	}
 	trigger stolen
 	{
 		setstate documents_CMM invisible
 		setstate the_dropzone default
+		setstate docs_red_sign invisible
+		setstate docs_blue_sign invisible
+		setstate docs_yellow_sign default
 
 		wm_objective_status 5 1 1
 		wm_objective_status 5 0 2
@@ -740,6 +760,9 @@ documents
 	{
 		setstate documents_CMM default
 		setstate the_dropzone invisible
+		setstate docs_red_sign default
+		setstate docs_blue_sign invisible
+		setstate docs_yellow_sign invisible
 
 		wm_objective_status 5 1 0
 		wm_objective_status 5 0 0
@@ -747,6 +770,9 @@ documents
 	trigger captured
 	{
 		setstate the_dropzone invisible
+		setstate docs_red_sign invisible
+		setstate docs_blue_sign default
+		setstate docs_yellow_sign invisible
 	}
 }
 

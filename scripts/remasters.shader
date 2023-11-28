@@ -44,6 +44,24 @@ textures/remasters/signs/docs
 	implicitMap -
 }
 
+textures/remasters/signs/docs_red
+{
+	surfaceparm metalsteps
+	implicitMap -
+}
+
+textures/remasters/signs/docs_blue
+{
+	surfaceparm metalsteps
+	implicitMap -
+}
+
+textures/remasters/signs/docs_yellow
+{
+	surfaceparm metalsteps
+	implicitMap -
+}
+
 textures/remasters/signs/transmitter1
 {
 	surfaceparm metalsteps
@@ -51,6 +69,24 @@ textures/remasters/signs/transmitter1
 }
 
 textures/remasters/signs/keycard
+{
+	surfaceparm metalsteps
+	implicitMap -
+}
+
+textures/remasters/signs/keycard_red
+{
+	surfaceparm metalsteps
+	implicitMap -
+}
+
+textures/remasters/signs/keycard_blue
+{
+	surfaceparm metalsteps
+	implicitMap -
+}
+
+textures/remasters/signs/keycard_yellow
 {
 	surfaceparm metalsteps
 	implicitMap -
