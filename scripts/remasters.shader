@@ -7,7 +7,46 @@ textures/remasters/fragginhart_map
 
 	}
 }
-
+textures/remasters/signs/depogate_yellow_ctl
+{
+	surfaceparm metalsteps
+	implicitMap -
+}
+textures/remasters/signs/fh_generator_yellow_sign
+{
+	surfaceparm metalsteps
+	implicitMap -
+}
+textures/remasters/signs/sidewall_blue
+{
+	surfaceparm metalsteps
+	implicitMap -
+}
+textures/remasters/signs/sidewall_red
+{
+	surfaceparm metalsteps
+	implicitMap -
+}
+textures/remasters/signs/sidewall_yellow
+{
+	surfaceparm metalsteps
+	implicitMap -
+}
+textures/remasters/signs/transmitter_blue
+{
+	surfaceparm metalsteps
+	implicitMap -
+}
+textures/remasters/signs/transmitter_red
+{
+	surfaceparm metalsteps
+	implicitMap -
+}
+textures/remasters/signs/transmitter_yellow
+{
+	surfaceparm metalsteps
+	implicitMap -
+}
 textures/remasters/signs/fh_generator_sign
 {
 	surfaceparm metalsteps

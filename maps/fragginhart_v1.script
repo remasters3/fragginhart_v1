@@ -218,6 +218,7 @@ Sidewall
 		wait 300
 		constructible_class 3     // 2=Satchel 3=Dyna
 		setstate bit_of_sidewall invisible
+		trigger self yellow
 	}
 
 	death
@@ -227,6 +228,8 @@ Sidewall
 		wm_announce "^1Allies have destroyed the Side Wall!"
 		setstate bit_of_sidewall default
 		setstate axis_spawn_door_docs invisible
+		trigger self blue
+		trigger depot_gate_controls yellow
 		// *----------------------------------- vo ------------------------------------------*
 		wm_teamvoiceannounce 0 "fragginhart_axis_entrance2_destroyed"
 		wm_teamvoiceannounce 1 "fragginhart_allies_entrance2_destroyed"zz
@@ -235,9 +238,28 @@ Sidewall
 		wm_removeteamvoiceannounce 1 "fragginhart_allies_entrance2_destroy"
 		// *---------------------------------------------------------------------------------*
 	}
+	
+	trigger red
+	{
+		setstate sidewall_yellow invisible
+		setstate sidewall_red default
+		setstate sidewall_blue invisible
+	}
+	
+	trigger blue
+	{
+		setstate sidewall_yellow invisible
+		setstate sidewall_red invisible
+		setstate sidewall_blue default
+	}
+	
+	trigger yellow
+	{
+		setstate sidewall_yellow default
+		setstate sidewall_red invisible
+		setstate sidewall_blue invisible
+	}
 }
-
-
 // ==== Depot Gate ==== //
 
 move_Depot_Gate
@@ -373,21 +395,44 @@ depot_gate_controls
 		constructible_class 3
 		setstate Depot_Gate_deadplate invisible
 		setstate SecondCovDoor_axisconstruct_n default
-		setstate depogate_blue_ctl invisible
-		setstate depogate_red_ctl default
+		accum 4 set 0 //red 0 blue 1 yellow 2
+		trigger self red
 	}
 
 	death
 	{
+		accum 4 set 1 //red 0 blue 1 yellow 2
 		wm_objective_status 4 1 1
 		wm_objective_status 4 0 2
 		wm_announce "Allies have damaged the Depot Gate Controls and secured the Forward Bunker!"
 		wm_announce "^7Depot Gate is ^2opening^7!"
-		setstate depogate_blue_ctl default
-		setstate depogate_red_ctl invisible
 		setstate Depot_Gate_deadplate default
 		setstate SecondCovDoor_axisconstruct_n invisible
 		trigger move_Depot_Gate dead_action_Depot_Gate
+		trigger self blue
+		trigger documents yellow
+	}
+	
+	trigger red
+	{
+		setstate depogate_red_ctl default
+		setstate depogate_blue_ctl invisible
+		setstate depogate_yellow_ctl invisible
+	}
+	
+	trigger blue
+	{
+		setstate depogate_red_ctl invisible
+		setstate depogate_blue_ctl default
+		setstate depogate_yellow_ctl invisible
+	}
+	
+	trigger yellow
+	{
+		accum 4 abort_if_not_equal 0
+		setstate depogate_red_ctl invisible
+		setstate depogate_blue_ctl invisible
+		setstate depogate_yellow_ctl default
 	}
 }
 
@@ -403,20 +448,16 @@ main_gate_keycard
 		setstate main_gate_dropzone invisible
 		setstate genlightsoff default
 		setstate genlightson invisible
-		setstate generator_blue_sign invisible
-		setstate keycard_blue_sign invisible
-	    setstate generator_red_sign default
-	    setstate keycard_red_sign default
-	    setstate keycard_yellow_sign invisible
+		trigger self keycard_yellow
+		trigger self gen_red
 	}
 
 	trigger stolen
 	{
 		setstate main_gate_keycard_CMM invisible
 		setstate main_gate_dropzone default
-	    setstate keycard_blue_sign invisible
-	    setstate keycard_red_sign invisible
-	    setstate keycard_yellow_sign default
+		trigger self keycard_blue
+		trigger self gen_yellow
 	}
 
 	trigger dropped
@@ -426,7 +467,6 @@ main_gate_keycard
 		// *----------------------------------- vo ------------------------------------------*
 		wm_teamvoiceannounce 1 "allies_hq_objective_lost"
 		// *---------------------------------------------------------------------------------*
-
 		// setstate main_gate_dropzone invisible
 	}
 
@@ -434,9 +474,8 @@ main_gate_keycard
 	{
 		setstate main_gate_keycard_CMM default
 		setstate main_gate_dropzone invisible
-	    setstate keycard_blue_sign invisible
-	    setstate keycard_red_sign default
-	    setstate keycard_yellow_sign invisible
+		trigger self keycard_yellow
+		trigger self gen_red		
 	}
 
 	trigger captured
@@ -445,12 +484,9 @@ main_gate_keycard
 		// setstate Maingate_cmm invisible
 		alertentity gen_sound
 		// setstate main_gate_dropzone invisible
-		setstate generator_blue_sign default
-	    setstate generator_red_sign invisible
-	    setstate keycard_blue_sign default
-	    setstate keycard_red_sign invisible
-	    setstate keycard_yellow_sign invisible
-
+		trigger self gen_blue
+		trigger self keycard_blue
+		trigger depot_gate_controls yellow
 		setautospawn "Forward bunker" 0
 
 		wm_objective_status 1 1 1
@@ -480,6 +516,48 @@ main_gate_keycard
 		setstate main_gate_dropzone invisible
 		setstate axis_spawn_door_docs invisible
 		trigger move_Main_Gate open_action_Main_Gate
+	}
+	
+	trigger gen_red
+	{
+	    setstate generator_blue_sign invisible
+		setstate generator_red_sign default
+		setstate generator_yellow_sign invisible
+	}
+	
+	trigger gen_blue
+	{
+	    setstate generator_blue_sign default
+		setstate generator_red_sign invisible
+		setstate generator_yellow_sign invisible
+	}
+	
+	trigger gen_yellow
+	{
+	    setstate generator_blue_sign invisible
+		setstate generator_red_sign invisible
+		setstate generator_yellow_sign default
+	}
+	
+	trigger keycard_red
+	{
+	    setstate keycard_blue_sign invisible
+		setstate keycard_red_sign default
+		setstate keycard_yellow_sign invisible
+	}
+	
+	trigger keycard_blue
+	{
+	    setstate keycard_blue_sign default
+		setstate keycard_red_sign invisible
+		setstate keycard_yellow_sign invisible
+	}
+	
+	trigger keycard_yellow
+	{
+	    setstate keycard_blue_sign invisible
+		setstate keycard_red_sign invisible
+		setstate keycard_yellow_sign default
 	}
 }
 
@@ -731,18 +809,16 @@ documents
 	{
 		wait 20
 		setstate the_dropzone invisible
-		setstate docs_red_sign default
-		setstate docs_blue_sign invisible
-		setstate docs_yellow_sign invisible
+		trigger self red
+		trigger self tred
+		accum 5 set 0 //red 0 blue 1 yellow 2
 	}
 	trigger stolen
 	{
 		setstate documents_CMM invisible
 		setstate the_dropzone default
-		setstate docs_red_sign invisible
-		setstate docs_blue_sign invisible
-		setstate docs_yellow_sign default
-
+		trigger self blue
+		trigger self tyellow
 		wm_objective_status 5 1 1
 		wm_objective_status 5 0 2
 	}
@@ -753,26 +829,66 @@ documents
 		// *----------------------------------- vo ------------------------------------------*
 		wm_teamvoiceannounce 1 "allies_hq_objective_lost"
 		// *---------------------------------------------------------------------------------*
-
 		// setstate the_dropzone invisible
 	}
 	trigger returned
 	{
 		setstate documents_CMM default
 		setstate the_dropzone invisible
-		setstate docs_red_sign default
-		setstate docs_blue_sign invisible
-		setstate docs_yellow_sign invisible
-
 		wm_objective_status 5 1 0
 		wm_objective_status 5 0 0
+		trigger self tred
+		trigger self red
+		accum 5 abort_if_not_equal 2
+		trigger self yellow
 	} 
 	trigger captured
 	{
-		setstate the_dropzone invisible
+		trigger self blue
+		trigger self tblue
+	}
+	
+	trigger red
+	{
+		setstate docs_red_sign default
+		setstate docs_blue_sign invisible
+		setstate docs_yellow_sign invisible
+	}
+	
+	trigger blue
+	{
 		setstate docs_red_sign invisible
 		setstate docs_blue_sign default
 		setstate docs_yellow_sign invisible
+	}
+	
+	trigger yellow
+	{
+		setstate docs_red_sign invisible
+		setstate docs_blue_sign invisible
+		setstate docs_yellow_sign default
+		accum 5 set 2 //red 0 blue 1 yellow 2
+	}
+	
+	trigger tred
+	{
+		setstate transmitter_red default
+		setstate transmitter_blue invisible
+		setstate transmitter_yellow invisible
+	}
+	
+	trigger tblue
+	{
+		setstate transmitter_red invisible
+		setstate transmitter_blue default
+		setstate transmitter_yellow invisible
+	}
+	
+	trigger tyellow
+	{
+		setstate transmitter_red invisible
+		setstate transmitter_blue invisible
+		setstate transmitter_yellow default
 	}
 }
 
