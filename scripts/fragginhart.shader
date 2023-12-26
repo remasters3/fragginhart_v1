@@ -2,6 +2,7 @@ textures/fragginhart/terrain_0
 {
 	surfaceparm nolightmap
 	surfaceparm landmine
+	surfaceparm grasssteps
 	q3map_novertexshadows
 	q3map_forcesunlight
 	{
@@ -26,6 +27,7 @@ textures/fragginhart/terrain_1
 textures/fragginhart/terrain_2
 {
 	surfaceparm nolightmap
+	surfaceparm gravelsteps
 	q3map_novertexshadows
 	q3map_forcesunlight
 	{
@@ -39,6 +41,7 @@ textures/fragginhart/terrain_3
 {
 	surfaceparm nolightmap
 	surfaceparm landmine
+	surfaceparm grasssteps
 	q3map_novertexshadows
 	q3map_forcesunlight
 	{
@@ -51,6 +54,7 @@ textures/fragginhart/terrain_3
 textures/fragginhart/terrain_0to1
 {
 	surfaceparm nolightmap
+	surfaceparm grasssteps
 	q3map_novertexshadows
 	q3map_forcesunlight
 	{
@@ -72,6 +76,7 @@ textures/fragginhart/terrain_0to2
 {
 	surfaceparm nolightmap
 	surfaceparm landmine
+	surfaceparm grasssteps
 	q3map_novertexshadows
 	q3map_forcesunlight
 	{
@@ -93,6 +98,7 @@ textures/fragginhart/terrain_0to3
 {
 	surfaceparm nolightmap
 	surfaceparm landmine
+	surfaceparm grasssteps
 	q3map_novertexshadows
 	q3map_forcesunlight
 	{
@@ -133,6 +139,7 @@ textures/fragginhart/terrain_1to2
 textures/fragginhart/terrain_1to3
 {
 	surfaceparm nolightmap
+	surfaceparm grasssteps
 	q3map_novertexshadows
 	q3map_forcesunlight
 	{
@@ -154,6 +161,7 @@ textures/fragginhart/terrain_2to3
 {
 	surfaceparm nolightmap
 	surfaceparm landmine
+	surfaceparm grasssteps
 	q3map_novertexshadows
 	q3map_forcesunlight
 	{

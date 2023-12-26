@@ -487,6 +487,7 @@ main_gate_keycard
 		trigger self gen_blue
 		trigger self keycard_blue
 		trigger depot_gate_controls yellow
+		trigger the_dropzone show
 		setautospawn "Forward bunker" 0
 
 		wm_objective_status 1 1 1
@@ -808,7 +809,7 @@ documents
 	spawn
 	{
 		wait 20
-		setstate the_dropzone invisible
+		trigger the_dropzone hide
 		trigger self red
 		trigger self tred
 		accum 5 set 0 //red 0 blue 1 yellow 2
@@ -816,7 +817,6 @@ documents
 	trigger stolen
 	{
 		setstate documents_CMM invisible
-		setstate the_dropzone default
 		trigger self blue
 		trigger self tyellow
 		wm_objective_status 5 1 1
@@ -829,12 +829,10 @@ documents
 		// *----------------------------------- vo ------------------------------------------*
 		wm_teamvoiceannounce 1 "allies_hq_objective_lost"
 		// *---------------------------------------------------------------------------------*
-		// setstate the_dropzone invisible
 	}
 	trigger returned
 	{
 		setstate documents_CMM default
-		setstate the_dropzone invisible
 		wm_objective_status 5 1 0
 		wm_objective_status 5 0 0
 		trigger self tred
@@ -898,6 +896,16 @@ the_dropzone
 	death
 	{
 		trigger game_manager capture
+	}
+	
+	trigger show
+	{
+		setstate the_dropzone Default
+	}
+	
+	trigger hide
+	{
+		setstate the_dropzone invisible
 	}
 }
 
